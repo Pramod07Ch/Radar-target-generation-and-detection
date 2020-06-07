@@ -7,11 +7,11 @@ This project is a solution for the Radar Module in the Udacity Sensor Fusion Nan
 - Perform Range FFT on the received signal to determine the Range
 - Towards the end, perform the CFAR processing on the output of 2nd FFT to display the target.
 # Determine the Range
-plot for range estimtion where range is calculted from the beat frequency for a traget moving at 100m with -10 m/sec
-![output1](images/output1.fig)
+plot for range estimtion where range is calculted from the beat frequency for a traget moving at 100m with  velocity -10 m/sec
+![output 1](images/o1.png)
 
 # 2D FFT 
-![output2](images/output2.fig)
+![output 2](images/o2.png)
 
 # Implementation steps for the 2D CFAR process
 - Tr = 12, Td = 10 For both Range and Doppler Training Cells.
@@ -20,5 +20,6 @@ plot for range estimtion where range is calculted from the beat frequency for a 
 - Slide over each cell to be in Cell Under Test (CUT) on whole matix by  loop over training cells and excluding Guard cells from the edges.
 - For each iteration we sum the signal level across the training cells and then average is calculated.
 - Add offset to threshold and then compare the signal under CUT against this threshold.
-- If the CUT is greater than the threshold, assign a value of 1, else to zero.
-!ouput3](images/ouput3.fig)
+- If the CUT is greater than the threshold, assign a value of 1, else to zero. 
+# output
+![output 3](images/ouput3.png)
