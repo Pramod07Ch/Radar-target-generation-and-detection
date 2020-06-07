@@ -22,4 +22,4 @@ plot for range estimtion where range is calculted from the beat frequency for a 
 - Add offset to threshold and then compare the signal under CUT against this threshold.
 - If the CUT is greater than the threshold, assign a value of 1, else to zero. 
 # output
-![output 3](images/ouput3.png)
+![output 3](images/output3.png)
